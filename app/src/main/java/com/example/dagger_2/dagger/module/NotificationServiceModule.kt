@@ -10,7 +10,7 @@ import dagger.Provides
 import javax.inject.Named
 
 @Module
-class NotificationServiceModule {
+class NotificationServiceModule(private val retryCount :Int) {
     /**
      * Suppose we want to have both Notification service, then we have to use Qualifier
      * We have 2 option, one is as  @Named("email") and second is create your own @SMSAnnotation
@@ -18,7 +18,7 @@ class NotificationServiceModule {
     @SMSAnnotation
     @Provides
     fun provideSmsService(): NotificationService {
-        return SMSService()
+        return SMSService(retryCount)
     }
 
     @Named("email")
@@ -26,10 +26,4 @@ class NotificationServiceModule {
     fun provideEmailService(emailService: EmailService): NotificationService {
         return emailService
     }
-}
-
-//NOTE: An annotation argument must be a compile-time constant
-enum class NotificationQualifiers(name: String) {
-    SMS("sms"),
-    EMAIL("email")
 }

@@ -6,6 +6,7 @@ import javax.inject.Inject
 class UserRegistrationService @Inject constructor(
     private val userRepository: UserRepository,
     @SMSAnnotation private val notificationService: NotificationService
+    //@Named("sms") private val notificationService: NotificationService
 ) {
     fun registerUser(
         email: String,

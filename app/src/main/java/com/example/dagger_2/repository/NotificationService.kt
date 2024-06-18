@@ -12,8 +12,8 @@ class EmailService @Inject constructor() : NotificationService {
     }
 }
 
-class SMSService : NotificationService {
+class SMSService(private val retryCount: Int) : NotificationService {
     override fun sendTo(to: String, from: String, body: String) {
-        println("LENSA SMS send to $to from $from body $body")
+        println("LENSA SMS send to $to from $from body $body  retry $retryCount")
     }
 }
