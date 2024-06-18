@@ -8,18 +8,26 @@ import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import javax.inject.Named
+import javax.inject.Singleton
 
 @Module
 class NotificationServiceModule {
+    @Singleton
     @SMSAnnotation
     @Provides
     fun provideSmsService(retryCount :Int): NotificationService {
         return SMSService(retryCount)
     }
-
+    @Singleton
     @Named("email")
     @Provides
     fun provideEmailService(emailService: EmailService): NotificationService {
+        /**
+         * Since we already marked EmailService class as singleton,
+         * we don't need to annotate here,
+         * But encase if we are not able to access EmailService
+         * class directly then we can annotate here as well.
+         */
         return emailService
     }
 }

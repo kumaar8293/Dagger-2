@@ -6,7 +6,9 @@ import com.example.dagger_2.dagger.module.UserRepositoryModule
 import com.example.dagger_2.repository.NotificationService
 import dagger.BindsInstance
 import dagger.Component
+import javax.inject.Singleton
 
+@Singleton
 @Component(modules = [NotificationServiceModule::class, UserRepositoryModule::class])
 interface B_UserRegistrationComponent {
     fun inject(mainActivity: MainActivity)
