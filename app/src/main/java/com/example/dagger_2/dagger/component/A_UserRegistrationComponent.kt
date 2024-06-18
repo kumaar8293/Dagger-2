@@ -1,7 +1,7 @@
-package com.example.dagger_2.dagger
+package com.example.dagger_2.dagger.component
 
-import com.example.dagger_2.EmailService
-import com.example.dagger_2.UserRegistrationService
+import com.example.dagger_2.repository.EmailService
+import com.example.dagger_2.repository.UserRegistrationService
 import dagger.Component
 
 /**
@@ -25,6 +25,6 @@ interface A_UserRegistrationComponent {
      * We can get the UserRegistrationService object as below
      * DaggerUserRegistrationComponent.builder().build().provideUserRegistrationService()
      */
-    fun provideUserRegistrationService(): UserRegistrationService
-    fun provideEmailService(): EmailService
+   // fun provideUserRegistrationService(): UserRegistrationService
+   // fun provideEmailService(): EmailService
 }
