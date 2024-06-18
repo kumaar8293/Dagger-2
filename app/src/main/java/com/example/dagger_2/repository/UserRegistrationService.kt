@@ -1,10 +1,11 @@
 package com.example.dagger_2.repository
 
+import com.example.dagger_2.dagger.annotation.SMSAnnotation
 import javax.inject.Inject
 
 class UserRegistrationService @Inject constructor(
     private val userRepository: UserRepository,
-    private val notificationService: NotificationService
+    @SMSAnnotation private val notificationService: NotificationService
 ) {
     fun registerUser(
         email: String,
