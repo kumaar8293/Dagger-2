@@ -4,6 +4,6 @@ import javax.inject.Inject
 
 class UserRepository @Inject constructor(){
     fun saveUser(email: String, password: String) {
-        println("LENSA user saved")
+        println("LENSA saveUser $email and $password")
     }
 }
