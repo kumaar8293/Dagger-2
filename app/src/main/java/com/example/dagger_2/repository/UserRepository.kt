@@ -1,5 +1,6 @@
 package com.example.dagger_2.repository
 
+import com.example.dagger_2.dagger.annotation.ActivityScope
 import com.example.dagger_2.dagger.annotation.FirebaseAnalyticsAnnotation
 import com.example.dagger_2.dagger.annotation.MixPanelNameAnnotation
 import javax.inject.Inject
@@ -9,7 +10,7 @@ interface UserRepository {
     fun saveUser(email: String, password: String)
 }
 
-@Singleton
+@ActivityScope
 class SQLRepository @Inject constructor(
     private val analyticsService: AnalyticsService
 ) : UserRepository {

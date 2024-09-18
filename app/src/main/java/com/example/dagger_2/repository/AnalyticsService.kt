@@ -6,7 +6,7 @@ interface AnalyticsService  {
     fun trackEvent(name :String , type : String)
 }
 
-class FirebaseAnalytics @Inject constructor() : AnalyticsService{
+class FirebaseAnalytics  : AnalyticsService{
     override fun trackEvent(name: String, type: String) {
        println("LENSA FirebaseAnalytics $name and $type")
     }

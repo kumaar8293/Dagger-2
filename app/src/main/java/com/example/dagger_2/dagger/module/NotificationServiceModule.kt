@@ -1,5 +1,6 @@
 package com.example.dagger_2.dagger.module
 
+import com.example.dagger_2.dagger.annotation.ActivityScope
 import com.example.dagger_2.dagger.annotation.SMSAnnotation
 import com.example.dagger_2.repository.EmailService
 import com.example.dagger_2.repository.NotificationService
@@ -12,13 +13,13 @@ import javax.inject.Singleton
 
 @Module
 class NotificationServiceModule {
-    @Singleton
+    @ActivityScope
     @SMSAnnotation
     @Provides
     fun provideSmsService(retryCount :Int): NotificationService {
         return SMSService(retryCount)
     }
-    @Singleton
+    @ActivityScope
     @Named("email")
     @Provides
     fun provideEmailService(emailService: EmailService): NotificationService {
