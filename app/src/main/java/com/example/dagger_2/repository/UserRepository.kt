@@ -19,8 +19,13 @@ class SQLRepository @Inject constructor(
     }
 }
 
-class FirebaseRepository(private val analyticsService: AnalyticsService) : UserRepository {
+class FirebaseRepository(
+    private val analyticsService: AnalyticsService,
+    private val customerSupport: CustomerSupportService
+) : UserRepository {
     override fun saveUser(email: String, password: String) {
         println("LENSA saveUser to firebase $email and $password")
+        analyticsService.trackEvent("Save-User", "custom-event")
+        customerSupport.connectToCustomerCare("6969696969","Please help")
     }
 }
