@@ -1,5 +1,6 @@
 package com.example.dagger_2.repository
 
+import com.example.dagger_2.dagger.annotation.FirebaseAnalyticsAnnotation
 import com.example.dagger_2.dagger.annotation.SMSAnnotation
 import javax.inject.Inject
 

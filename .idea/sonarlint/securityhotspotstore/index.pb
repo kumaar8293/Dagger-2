@@ -1,9 +1,6 @@
 
 @
 build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 x
 Happ/src/androidTest/java/com/example/dagger_2/ExampleInstrumentedTest.kt,c/5/c5bd34e4b30ef37c580354a22c4ea190a2e5d35c
 C
@@ -28,23 +25,3 @@ P
  app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
 Ü
 Vapp/src/main/java/com/example/dagger_2/dagger/component/A_UserRegistrationComponent.kt,2/f/2f662821f32f0ac7ea5e837ddf3d179f556e2f7e
-|
-Lapp/src/main/java/com/example/dagger_2/repository/UserRegistrationService.kt,4/3/43cf3b7fdcd54cee0759107042518fe1350e6276
-f
-6app/src/main/java/com/example/dagger_2/MainActivity.kt,b/c/bc99106c81ebaf850126293d16cdf75a0bf0295b
-g
-7app/src/main/java/com/example/dagger_2/MyApplication.kt,9/2/92d311f65942776261f1b92e2f253d009d6a5d09
-Ü
-Vapp/src/main/java/com/example/dagger_2/dagger/component/B_UserRegistrationComponent.kt,7/b/7b38a09321609e6d448b5b7f0e2a54782b4566d2
-y
-Iapp/src/main/java/com/example/dagger_2/dagger/annotation/SMSAnnotation.kt,e/1/e110be753a4063c426eb3d4586c7fcd9f3b88d2b
-|
-Lapp/src/main/java/com/example/dagger_2/dagger/module/UserRepositoryModule.kt,d/3/d3f03007002b8e48c6516d67e0a14b65438862ab
-Å
-Qapp/src/main/java/com/example/dagger_2/dagger/module/NotificationServiceModule.kt,9/5/95c34cac6df93f88a4a657193a55f331c6e29a57
-x
-Happ/src/main/java/com/example/dagger_2/repository/NotificationService.kt,0/7/07d2589cf8566b203499886a3b0cbbf02c51af67
-s
-Capp/src/main/java/com/example/dagger_2/repository/UserRepository.kt,2/0/209ed667a5760e2cdf08eacf81e1788a32a41b99
-|
-Lapp/src/main/java/com/example/dagger_2/dagger/annotation/ApplicationScope.kt,4/6/46422c681557c188d3a5e85359b01a19361dafd4
