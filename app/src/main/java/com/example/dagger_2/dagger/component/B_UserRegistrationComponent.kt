@@ -21,10 +21,15 @@ import javax.inject.Singleton
 interface B_UserRegistrationComponent {
     fun inject(mainActivity: MainActivity)
 
-    @Subcomponent.Factory
-    interface Factory {
-        fun create(
-            @BindsInstance retryCount: Int,
-        ): B_UserRegistrationComponent
+    /**
+     * To Achieve Builder pattern we need 3 steps to implement it
+     * 1. Use @Subcomponent.Builder annotation
+     * 2. build  -----> Component
+     * 3. methods --------> Builder
+     */
+    @Subcomponent.Builder
+    interface Builder {
+        fun build() : B_UserRegistrationComponent
+        fun retryCount(@BindsInstance retryCount: Int): Builder
     }
 }

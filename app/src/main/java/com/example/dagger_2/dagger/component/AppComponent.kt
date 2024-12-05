@@ -7,5 +7,5 @@ import javax.inject.Singleton
 @Singleton
 @Component(modules = [AnalyticsModule::class])
 interface AppComponent {
-    fun getUserRegistrationComponentFactory() : B_UserRegistrationComponent.Factory
+    fun getUserRegistrationComponentBuilder() : B_UserRegistrationComponent.Builder
 }
