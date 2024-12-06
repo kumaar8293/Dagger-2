@@ -44,6 +44,7 @@ val daggerVersion = "2.24"
 val lifeCycle = "2.6.2"
 val retrofit = "2.9.0"
 val coroutines = "1.7.3"
+val roomDatabase = "2.6.1"
 
 dependencies {
 
@@ -69,7 +70,15 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:$retrofit")
     // Kotlin Coroutines Core Library
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines")
-
     // Kotlin Coroutines for Android
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines")
+
+    // Room runtime
+    implementation("androidx.room:room-runtime:$roomDatabase")
+    // Room KTX (for coroutine support)
+    implementation("androidx.room:room-ktx:$roomDatabase")
+    // Room Compiler (Annotation Processor for generating code)
+    kapt("androidx.room:room-compiler:$roomDatabase")
+
+    implementation("com.google.code.gson:gson:2.8.9")
 }

@@ -17,3 +17,11 @@ X
 gradlew.bat,2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3
 C
 settings.gradle.kts,7/4/749edfcc96398253e5b3416184e95c46621da850
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+f
+6app/src/main/java/com/example/dagger_2/MainActivity.kt,b/c/bc99106c81ebaf850126293d16cdf75a0bf0295b
+x
+Happ/src/main/java/com/example/dagger_2/sample_project/utils/Constants.kt,3/b/3b93637e1b1430afb6b6428036033a5bace457d4
+y
+Iapp/src/main/java/com/example/dagger_2/sample_project/di/NetworkModule.kt,9/4/94dc81512092320a16a3ed47c80a933c2ec56676

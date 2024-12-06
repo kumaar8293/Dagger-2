@@ -3,7 +3,7 @@ package com.example.dagger_2.sample_project.ui.viewmodels
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.dagger_2.sample_project.models.Products
+import com.example.dagger_2.sample_project.models.Product
 import com.example.dagger_2.sample_project.repository.ProductRepository
 import kotlinx.coroutines.launch
 
@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 
 class SampleViewModel(private val productRepository: ProductRepository) : ViewModel() {
 
-    val productsLiveData: LiveData<Products>
+    val productsLiveData: LiveData<List<Product>>
         get() = productRepository.products
 
     init {
