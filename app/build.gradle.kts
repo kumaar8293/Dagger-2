@@ -34,7 +34,16 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    viewBinding {
+        enable = true
+    }
 }
+
+val daggerVersion = "2.24"
+val lifeCycle = "2.6.2"
+val retrofit = "2.9.0"
+val coroutines = "1.7.3"
 
 dependencies {
 
@@ -46,8 +55,21 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    implementation("com.google.dagger:dagger-android:2.24")
+    implementation("com.google.dagger:dagger-android:$daggerVersion")
     //Kotlin Annotation Processing Tool
-    kapt ("com.google.dagger:dagger-compiler:2.24")
+    kapt ("com.google.dagger:dagger-compiler:$daggerVersion")
 
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifeCycle")
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifeCycle")
+    // Retrofit core
+    implementation("com.squareup.retrofit2:retrofit:$retrofit")
+    // Converter for JSON (using Moshi or Gson)
+    implementation("com.squareup.retrofit2:converter-gson:$retrofit")
+    // Kotlin Coroutines Core Library
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines")
+
+    // Kotlin Coroutines for Android
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines")
 }

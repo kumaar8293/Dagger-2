@@ -1,6 +1,4 @@
 
-@
-build.gradle.kts,d/b/dbcff70658daf80b53ce624f6adcaa529df5ed8d
 x
 Happ/src/androidTest/java/com/example/dagger_2/ExampleInstrumentedTest.kt,c/5/c5bd34e4b30ef37c580354a22c4ea190a2e5d35c
 C
@@ -19,7 +17,3 @@ X
 gradlew,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9
 ;
 gradlew.bat,2/a/2a45a911a8f1836b0b6c5b758962572012d8f8c3
-D
-app/build.gradle.kts,d/2/d2a4383452aad84a18429a5844d31330a012a9e6
-P
- app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
