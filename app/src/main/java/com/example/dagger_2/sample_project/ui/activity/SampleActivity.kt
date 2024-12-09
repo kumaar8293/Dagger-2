@@ -4,11 +4,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.dagger_2.MyApplication
-import com.example.dagger_2.R
 import com.example.dagger_2.databinding.ActivitySampleBinding
 import com.example.dagger_2.sample_project.models.Product
 import com.example.dagger_2.sample_project.ui.viewmodels.SampleViewModel
-import com.example.dagger_2.sample_project.ui.viewmodels.SampleViewModelFactory
+import com.example.dagger_2.sample_project.ui.viewmodels.GenericViewModelFactory
+import com.example.dagger_2.sample_project.ui.viewmodels.SampleViewModel2
 import javax.inject.Inject
 
 
@@ -18,7 +18,7 @@ class SampleActivity : AppCompatActivity() {
     lateinit var sampleViewModel: SampleViewModel
 
     @Inject
-    lateinit var sampleViewModelFactory: SampleViewModelFactory
+    lateinit var sampleViewModelFactory: GenericViewModelFactory
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

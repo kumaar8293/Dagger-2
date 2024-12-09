@@ -2,7 +2,6 @@ package com.example.dagger_2.sample_project.di
 
 import com.example.dagger_2.sample_project.retrofit.FakerApi
 import com.example.dagger_2.sample_project.utils.Constants
-import dagger.BindsInstance
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
